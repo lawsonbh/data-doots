@@ -5,6 +5,13 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-image",
-    "gatsby-plugin-sharp"
+    "gatsby-plugin-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: `doot-list`,
+        path: `${__dirname}/doot-list`,
+      }
+    },
   ],
 };
